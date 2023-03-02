@@ -11,7 +11,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
  
  
-  for (let i =0; i<=maxWinners;i++){
+  for (let i =0; i<maxWinners;i++){
     winners.push(random(minNumber,maxNumber)>>0)
   }
   
@@ -28,7 +28,7 @@ function draw() {
       circle(random(50,width-50)>>0,random(50,width-50)>>0,random(50,height-50)>>0)
   }
   
-  for (let i =0; i<=maxWinners;i++){
+  for (let i =0; i<maxWinners;i++){
     push()
     rotate(random(-Math.PI/25,Math.PI/25))
     textSize(80)   
